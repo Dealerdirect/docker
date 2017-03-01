@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV COMPOSER_HOME /root/.composer
 ENV PATH $PATH:$COMPOSER_HOME/vendor/bin
 ENV INSTALL_APT_BUILD_DEPS "build-essential libssl-dev libmcrypt-dev libicu-dev"
-ENV INSTALL_APT "sudo git unzip ssh parallel rsync curl openssl ca-certificates"
+ENV INSTALL_APT "sudo git unzip ssh parallel rsync curl openssl ca-certificates libicu52 libmcrypt4"
 ENV INSTALL_PHP_EXT "bcmath mcrypt pcntl intl mbstring"
 
 ADD files/shared/ssh/* /root/.ssh/
