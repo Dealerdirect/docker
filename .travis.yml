@@ -22,7 +22,7 @@ env:
   - IMAGE=mpc VERSION= VARIANT=
 
 script:
-  - travis_retry docker build -t "$IMAGE:${VERSION:-latest}${VARIANT:+-$VARIANT}" -f "images/$IMAGE${VERSION:+/$VERSION}${VARIANT:+/$VARIANT}/Dockerfile" .
+  - travis_retry docker build -t "dealerdirect/$IMAGE:${VERSION:-latest}${VARIANT:+-$VARIANT}" -f "images/$IMAGE${VERSION:+/$VERSION}${VARIANT:+/$VARIANT}/Dockerfile" .
 
 after_script:
   - docker images
@@ -30,5 +30,5 @@ after_script:
 after_success:
   - if [ "$TRAVIS_BRANCH" == "master" ]; then
     docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
-    docker push "$IMAGE:${VERSION:-latest}${VARIANT:+-$VARIANT}";
+    docker push "dealerdirect/$IMAGE:${VERSION:-latest}${VARIANT:+-$VARIANT}";
     fi
