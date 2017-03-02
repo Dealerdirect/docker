@@ -17,5 +17,5 @@ RUN \
     bash /tmp/systemd.sh && \
     bash /tmp/shared/scripts/cleanup.sh
 
-VOLUME [ "/sys/fs/cgroup", "/run", "/run/lock", "/tmp" ]
+VOLUME [ "/sys/fs/cgroup", "/run", "/run/lock" ]
 CMD ["/lib/systemd/systemd"]

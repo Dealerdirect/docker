@@ -8,6 +8,7 @@ ENV ANSIBLE_VERSION "1.9.6"
 
 ADD files/shared/scripts/*.sh /tmp/shared/scripts/
 ADD files/ansible/scripts/*.sh /tmp/ansible/scripts/
+ADD files/ansible/hosts /etc/ansible/hosts
 ADD files/ansible/initctl_faker /tmp/
 
 RUN \
