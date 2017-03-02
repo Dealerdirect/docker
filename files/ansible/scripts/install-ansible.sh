@@ -11,9 +11,6 @@ else
   pip install ansible
 fi
 
-mkdir -p /etc/ansible
-echo "[local]\nlocalhost ansible_connection=local" > /etc/ansible/hosts
-
 rm -fr /sbin/initctl
 mv /tmp/initctl_faker /sbin/initctl
 chmod +x /sbin/initctl
