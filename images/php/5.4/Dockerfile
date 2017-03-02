@@ -18,5 +18,5 @@ RUN \
   bash /tmp/shared/scripts/install-upgrade-apt-packages.sh && \
   bash /tmp/shared/scripts/install-git-crypt.sh && \
   bash /tmp/php/scripts/install-extensions.sh && \
-  bash /tmp/php/scripts/install-composer.sh && \
+  bash /tmp/shared/scripts/install-composer.sh && \
   bash /tmp/shared/scripts/cleanup.sh
