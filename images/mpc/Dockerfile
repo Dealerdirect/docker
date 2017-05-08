@@ -9,6 +9,7 @@ ENV INSTALL_GEM "rubocop"
 
 ADD files/shared/scripts/*.sh /tmp/shared/scripts/
 ADD files/mpc/.remarkrc /root/.remarkrc
+ADD files/yamllint /root/.config/yamllint
 
 RUN \
     bash /tmp/shared/scripts/install-upgrade-apt-packages.sh && \
