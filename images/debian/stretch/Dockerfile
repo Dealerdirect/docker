@@ -9,6 +9,7 @@ ADD files/shared/ssh/* /root/.ssh/
 ADD files/shared/scripts/*.sh /tmp/shared/scripts/
 ADD files/debian/stretch/sources.list /etc/apt/sources.list
 ADD files/debian/stretch/systemd.sh /tmp/
+RUN mkdir -p /root/.parallel ; touch /root/.parallel/will-cite
 
 RUN \
     bash /tmp/shared/scripts/install-upgrade-apt-packages.sh && \
