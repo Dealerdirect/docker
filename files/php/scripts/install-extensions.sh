@@ -4,7 +4,10 @@ set -o pipefail # Return exit status of the last command in the pipe that failed
 
 if [ ! -z "$INSTALL_PHP_EXT" ]; then
   for ext in $INSTALL_PHP_EXT; do
-    docker-php-ext-install "$ext"
+    if [[ ${ext} == 'gd' ]] ; then
+      docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/
+    fi
+    docker-php-ext-install -j$(nproc) "$ext"
   done
 fi
 
