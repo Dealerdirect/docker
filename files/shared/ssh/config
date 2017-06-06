@@ -1,0 +1,5 @@
+Host *
+  VerifyHostKeyDNS yes
+  StrictHostKeyChecking no
+  ConnectionAttempts 5
+  CheckHostIP no
