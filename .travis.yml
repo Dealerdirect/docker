@@ -3,6 +3,7 @@ language: bash
 services: docker
 
 env:
+  - IMAGE=ubuntu VERSION=xenial VARIANT=
   - IMAGE=debian VERSION=jessie VARIANT=
   - IMAGE=debian VERSION=stretch VARIANT=
   - IMAGE=php VERSION= VARIANT=
