@@ -25,7 +25,8 @@ env:
   - IMAGE=mpc VERSION= VARIANT=
 
 script:
-  - travis_retry docker build -t "dealerdirect/$IMAGE:${VERSION:-latest}${VARIANT:+-$VARIANT}" -f "images/$IMAGE${VERSION:+/$VERSION}${VARIANT:+/$VARIANT}/Dockerfile" .
+  - if [ "${TRAVIS_EVENT_TYPE:-cron}" != "cron" ] ; then docker pull "dealerdirect/$IMAGE:${VERSION:-latest}${VARIANT:+-$VARIANT}"  ; fi
+  - travis_retry docker build --cache-from "dealerdirect/$IMAGE:${VERSION:-latest}${VARIANT:+-$VARIANT}" -t "dealerdirect/$IMAGE:${VERSION:-latest}${VARIANT:+-$VARIANT}" -f "images/$IMAGE${VERSION:+/$VERSION}${VARIANT:+/$VARIANT}/Dockerfile" .
 
 after_script:
   - docker images
