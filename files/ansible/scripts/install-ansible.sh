@@ -6,9 +6,9 @@ pip install --upgrade setuptools
 pip install cryptography boto passlib dnspython
 
 if [ ! -z "$ANSIBLE_VERSION" ]; then
-  pip install "ansible==$ANSIBLE_VERSION"
+  pip install "ansible==$ANSIBLE_VERSION" ansible-lint
 else
-  pip install ansible
+  pip install ansible ansible-lint
 fi
 
 rm -fr /sbin/initctl

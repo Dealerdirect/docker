@@ -2,7 +2,7 @@ FROM dealerdirect/debian:jessie
 MAINTAINER Dealerdirect <opensource@dealerdirect.nl>
 
 ENV INSTALL_APT_BUILD_DEPS "python-pip build-essential python-dev libssl-dev libffi-dev"
-ENV INSTALL_PIP "ansible-lint"
+ENV INSTALL_PIP ""
 ENV INSTALL_APT "python python-six"
 
 ADD files/shared/scripts/*.sh /tmp/shared/scripts/
