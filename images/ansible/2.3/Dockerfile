@@ -2,7 +2,6 @@ FROM dealerdirect/debian:stretch
 MAINTAINER Dealerdirect <opensource@dealerdirect.nl>
 
 ENV INSTALL_APT_BUILD_DEPS "python-pip build-essential python-dev libssl-dev libffi-dev python-wheel"
-ENV INSTALL_PIP ""
 ENV INSTALL_APT "python python-six"
 ENV ANSIBLE_VERSION "2.3.0.0"
 
