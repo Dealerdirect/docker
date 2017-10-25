@@ -2,7 +2,7 @@ FROM dealerdirect/debian:jessie
 MAINTAINER Dealerdirect <opensource@dealerdirect.nl>
 
 ENV INSTALL_APT_BUILD_DEPS "python-pip build-essential python-dev libssl-dev libffi-dev"
-ENV INSTALL_APT "python python-six"
+ENV INSTALL_APT "python python-six python-ipaddress python-enum34"
 ENV ANSIBLE_VERSION "1.9.6"
 
 ADD files/shared/scripts/*.sh /tmp/shared/scripts/
