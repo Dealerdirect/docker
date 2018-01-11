@@ -1,7 +1,7 @@
 FROM dealerdirect/debian:jessie
 MAINTAINER Dealerdirect <opensource@dealerdirect.nl>
 
-ENV INSTALL_APT "build-essential"
+ENV INSTALL_APT "build-essential python"
 ENV NODE_VERSION "7.7.0"
 
 ADD files/shared/scripts/*.sh /tmp/shared/scripts/

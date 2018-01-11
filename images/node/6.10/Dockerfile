@@ -1,7 +1,7 @@
 FROM dealerdirect/debian:jessie
 MAINTAINER Dealerdirect <opensource@dealerdirect.nl>
 
-ENV INSTALL_APT "build-essential"
+ENV INSTALL_APT "build-essential python"
 ENV NODE_VERSION "6.10.0"
 ENV YARN_VERION "0.21.3"
 
