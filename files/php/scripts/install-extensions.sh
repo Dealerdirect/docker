@@ -14,6 +14,6 @@ fi
 if [ ! -z "$INSTALL_PHP_PECL" ]; then
   for ext in $INSTALL_PHP_PECL; do
     pecl install "$ext"
-    docker-php-ext-enable "$ext"
+    docker-php-ext-enable ${ext%%-*}
   done
 fi

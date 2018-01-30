@@ -7,10 +7,10 @@ env:
   - IMAGE=debian VERSION=jessie VARIANT=
   - IMAGE=debian VERSION=stretch VARIANT=
   - IMAGE=php VERSION= VARIANT=
-  - IMAGE=php VERSION=5.4 VARIANT=
   - IMAGE=php VERSION=5.6 VARIANT=
   - IMAGE=php VERSION=7.0 VARIANT=
   - IMAGE=php VERSION=7.1 VARIANT=
+  - IMAGE=php VERSION=7.2 VARIANT=
   - IMAGE=node VERSION= VARIANT=
   - IMAGE=node VERSION=4.8 VARIANT=
   - IMAGE=node VERSION=6.10 VARIANT=
@@ -25,7 +25,7 @@ env:
   - IMAGE=mpc VERSION= VARIANT=
 
 script:
-  - if [ "${TRAVIS_EVENT_TYPE:-cron}" != "cron" ] ; then docker pull "dealerdirect/$IMAGE:${VERSION:-latest}${VARIANT:+-$VARIANT}"  ; fi
+  - if [ "${TRAVIS_EVENT_TYPE:-cron}" != "cron" ] ; then docker pull "dealerdirect/$IMAGE:${VERSION:-latest}${VARIANT:+-$VARIANT}" || /bin/true ; fi
   - travis_retry docker build --cache-from "dealerdirect/$IMAGE:${VERSION:-latest}${VARIANT:+-$VARIANT}" -t "dealerdirect/$IMAGE:${VERSION:-latest}${VARIANT:+-$VARIANT}" -f "images/$IMAGE${VERSION:+/$VERSION}${VARIANT:+/$VARIANT}/Dockerfile" .
 
 after_script:
