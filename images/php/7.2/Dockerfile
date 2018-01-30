@@ -15,6 +15,7 @@ ADD files/shared/scripts/*.sh /tmp/shared/scripts/
 ADD files/php/scripts/* /tmp/php/scripts/
 ADD files/php/php.ini /usr/local/etc/php/php.ini
 
+
 RUN \
   bash /tmp/shared/scripts/install-upgrade-apt-packages.sh && \
   bash /tmp/shared/scripts/install-git-crypt.sh && \
