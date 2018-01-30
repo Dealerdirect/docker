@@ -7,7 +7,7 @@ ENV PATH $PATH:$COMPOSER_HOME/vendor/bin
 ENV INSTALL_APT_BUILD_DEPS "build-essential libssl-dev libmcrypt-dev libicu-dev libfreetype6-dev libjpeg62-turbo-dev libmcrypt-dev libpng12-dev"
 ENV INSTALL_APT "sudo git unzip ssh parallel rsync curl openssl ca-certificates libicu52 libmcrypt4 mysql-client libjpeg62-turbo libfreetype6"
 ENV INSTALL_PHP_EXT "bcmath mcrypt pcntl pdo pdo_mysql intl mbstring gd"
-ENV INSTALL_PHP_PECL "xdebug"
+ENV INSTALL_PHP_PECL "xdebug-2.5.5"
 
 ADD files/shared/ssh/* /root/.ssh/
 ADD files/shared/scripts/*.sh /tmp/shared/scripts/
