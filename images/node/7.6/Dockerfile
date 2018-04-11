@@ -1,4 +1,4 @@
-FROM dealerdirect/debian:jessie
+FROM dealerdirect/debian:stretch
 MAINTAINER Dealerdirect <opensource@dealerdirect.nl>
 
 ENV INSTALL_APT "build-essential"
