@@ -1,7 +1,7 @@
 FROM dealerdirect/debian:stretch
 MAINTAINER Dealerdirect <opensource@dealerdirect.nl>
 
-ENV INSTALL_APT "gnupg2 build-essential"
+ENV INSTALL_APT "dirmngr gnupg2 build-essential"
 ENV NODE_VERSION "7.7.0"
 ENV YARN_VERION "0.21.3"
 
