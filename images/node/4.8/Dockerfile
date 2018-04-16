@@ -1,7 +1,7 @@
-FROM dealerdirect/debian:jessie
+FROM dealerdirect/debian:stretch
 MAINTAINER Dealerdirect <opensource@dealerdirect.nl>
 
-ENV INSTALL_APT "build-essential"
+ENV INSTALL_APT "dirmngr gnupg2 build-essential"
 ENV NODE_VERSION "4.8.0"
 ENV YARN_VERION "0.21.3"
 
