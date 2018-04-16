@@ -71,10 +71,10 @@ THE SOFTWARE.
 [frenck]: https://github.com/frenck
 [get-in-touch]: http://workingatdealerdirect.eu/open-sollicitatie/
 [license-shield]: https://img.shields.io/github/license/dealerdirect/docker.svg
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2017.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2018.svg
 [mjrider]: https://github.com/mjrider
 [project-stage-shield]: https://img.shields.io/badge/Project%20Stage-Experimental-yellow.svg
-[travis-shield]: https://img.shields.io/travis/DealerDirect/docker.svg
-[travis]: https://travis-ci.org/DealerDirect/docker
+[travis-shield]: https://img.shields.io/travis/Dealerdirect/docker.svg
+[travis]: https://travis-ci.org/Dealerdirect/docker
 [vacancies]: http://workingatdealerdirect.eu/?post_type=vacancy&s=&department=99
 [workingatdealerdirecteu]: http://www.workingatdealerdirect.eu
