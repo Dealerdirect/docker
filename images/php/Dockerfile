@@ -4,9 +4,9 @@ MAINTAINER Dealerdirect <opensource@dealerdirect.nl>
 ENV DEBIAN_FRONTEND noninteractive
 ENV COMPOSER_HOME /root/.composer
 ENV PATH $PATH:$COMPOSER_HOME/vendor/bin
-ENV INSTALL_APT_BUILD_DEPS "build-essential libssl-dev libicu-dev libfreetype6-dev libjpeg62-turbo-dev libpng-dev libsodium-dev"
+ENV INSTALL_APT_BUILD_DEPS "build-essential libssl-dev libicu-dev libfreetype6-dev libjpeg62-turbo-dev libpng-dev libsodium-dev libxml2-dev"
 ENV INSTALL_APT "sudo git unzip ssh parallel rsync curl openssl ca-certificates libicu57 mysql-client libjpeg62-turbo libfreetype6 libsodium18 libbz2-dev"
-ENV INSTALL_PHP_EXT "bcmath pcntl pdo_mysql intl gd sodium bz2 exif mysqli zip opcache"
+ENV INSTALL_PHP_EXT "bcmath pcntl pdo_mysql intl gd sodium bz2 exif mysqli zip opcache soap"
 ENV INSTALL_PHP_PECL "xdebug"
 
 ADD files/shared/ssh/* /root/.ssh/
