@@ -3,7 +3,7 @@ set -o errexit  # Exit script when a command exits with non-zero status
 set -o pipefail # Return exit status of the last command in the pipe that failed
 
 apt-get -o Dpkg::Options::="--force-unsafe-io" -y update
-apt-get -o Dpkg::Options::="--force-unsafe-io" -y upgrade
+apt-get -o Dpkg::Options::="--force-unsafe-io" -y dist-upgrade
 
 source  /etc/os-release
 APTEXTRA=''
