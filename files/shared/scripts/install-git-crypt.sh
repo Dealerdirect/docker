@@ -11,7 +11,7 @@ if [ ${VERSION:3:-1} == 'stretch' ] ; then
 else
   curl -L "https://github.com/AGWA/git-crypt/archive/debian/$GIT_CRYPT_VERSION.tar.gz" | tar zxv -C /var/tmp && \
   cd "/var/tmp/git-crypt-debian-$GIT_CRYPT_VERSION"
-  make
+  make -j 4
   make install PREFIX=/usr/local
   cd -
   rm -f -r /var/tmp/git-crypt-debian-$GIT_CRYPT_VERSION
