@@ -21,5 +21,5 @@ RUN \
   bash /tmp/php/scripts/install-extensions.sh && \
   bash /tmp/shared/scripts/install-composer.sh && \
   bash /tmp/shared/scripts/install-qa-tools.sh && \
-  bash /tmp/shared/scripts/cleanup.sh \
+  bash /tmp/shared/scripts/cleanup.sh && \
   sed -i -e's@curl -sO https://gordalina.github.io/cachetool/downloads/cachetool.phar@curl -so cachetool.phar https://gordalina.github.io/cachetool/downloads/cachetool-3.2.1.phar@g' /root/.composer/vendor/deployer/recipes/cachetool.php
