@@ -1,7 +1,7 @@
 FROM dealerdirect/debian:stretch
 MAINTAINER Dealerdirect <opensource@dealerdirect.nl>
 
-ENV INSTALL_APT_BUILD_DEPS "python-pip build-essential python-dev"
+ENV INSTALL_APT_BUILD_DEPS "python-pip build-essential python-dev ruby-dev"
 ENV INSTALL_APT "gnupg2 php7.0-cli php7.0-intl ruby libxml2-utils aspell gettext mariadb-client python-six"
 ENV INSTALL_PIP "yamllint flake8 pydocstyle"
 ENV INSTALL_NPM "nomnom@1.6 jsonlint editorconfig-tools alex markdown-spellcheck remark-cli remark-lint remark-lint-books-links remark-lint-no-empty-sections remark-lint-no-url-trailing-slash remark-validate-links remark-preset-lint-dealerdirect"
