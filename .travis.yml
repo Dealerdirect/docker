@@ -16,7 +16,6 @@ env:
   - IMAGE=ansible VERSION=2.5 VARIANT=
   - IMAGE=ansible VERSION=2.6 VARIANT=
   - IMAGE=ansible VERSION=2.7 VARIANT=
-  - IMAGE=ansible VERSION=2.8 VARIANT=
   - IMAGE=mpc VERSION= VARIANT=
 
 script:
