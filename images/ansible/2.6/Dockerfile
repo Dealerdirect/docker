@@ -3,7 +3,7 @@ MAINTAINER Dealerdirect <opensource@dealerdirect.nl>
 
 ENV INSTALL_APT_BUILD_DEPS "python-pip build-essential python-dev libssl-dev libffi-dev python-wheel"
 ENV INSTALL_APT "python python-six python-ipaddress python-enum34"
-ENV ANSIBLE_VERSION "2.6.2"
+ENV ANSIBLE_VERSION "2.6.6"
 
 ADD files/shared/scripts/*.sh /tmp/shared/scripts/
 ADD files/ansible/scripts/*.sh /tmp/ansible/scripts/
