@@ -71,7 +71,7 @@ THE SOFTWARE.
 [frenck]: https://github.com/frenck
 [get-in-touch]: http://workingatdealerdirect.eu/open-sollicitatie/
 [license-shield]: https://img.shields.io/github/license/dealerdirect/docker.svg
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2018.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2019.svg
 [mjrider]: https://github.com/mjrider
 [project-stage-shield]: https://img.shields.io/badge/Project%20Stage-Experimental-yellow.svg
 [travis-shield]: https://img.shields.io/travis/Dealerdirect/docker.svg
