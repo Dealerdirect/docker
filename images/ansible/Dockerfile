@@ -1,8 +1,8 @@
-FROM dealerdirect/debian:jessie
+FROM dealerdirect/debian:stretch
 MAINTAINER Dealerdirect <opensource@dealerdirect.nl>
 
-ENV INSTALL_APT_BUILD_DEPS "python-pip build-essential python-dev libssl-dev libffi-dev"
-ENV INSTALL_APT "python python-six python-ipaddress python-enum34"
+ENV INSTALL_APT_BUILD_DEPS "python3-pip build-essential python3-dev libssl-dev libffi-dev python3-wheel"
+ENV INSTALL_APT "python3 python3-six"
 
 ADD files/shared/scripts/*.sh /tmp/shared/scripts/
 ADD files/ansible/scripts/*.sh /tmp/ansible/scripts/
