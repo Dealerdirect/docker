@@ -3,18 +3,13 @@ language: bash
 services: docker
 
 env:
-  - IMAGE=ubuntu VERSION=xenial VARIANT=
   - IMAGE=debian VERSION=stretch VARIANT=
   - IMAGE=php VERSION= VARIANT=
   - IMAGE=php VERSION=7.2 VARIANT=
-  - IMAGE=node VERSION= VARIANT=
-  - IMAGE=node VERSION=6.10 VARIANT=
-  - IMAGE=node VERSION=7.6 VARIANT=
-  - IMAGE=node VERSION=7.7 VARIANT=
+  - IMAGE=php VERSION=7.3 VARIANT=
   - IMAGE=ansible VERSION= VARIANT=
-  - IMAGE=ansible VERSION=2.5 VARIANT=
-  - IMAGE=ansible VERSION=2.6 VARIANT=
   - IMAGE=ansible VERSION=2.7 VARIANT=
+  - IMAGE=ansible VERSION=2.8 VARIANT=
   - IMAGE=mpc VERSION= VARIANT=
 
 script:
