@@ -1,8 +1,8 @@
-FROM dealerdirect/debian:stretch
+FROM dealerdirect/debian:buster
 MAINTAINER Dealerdirect <opensource@dealerdirect.nl>
 
 ENV INSTALL_APT_BUILD_DEPS "python3-pip build-essential python3-dev libssl-dev libffi-dev python3-wheel"
-ENV INSTALL_APT "python3 python3-six"
+ENV INSTALL_APT "python3 python3-six python3-distutils"
 ENV ANSIBLE_VERSION "2.9.10"
 
 ADD files/shared/scripts/*.sh /tmp/shared/scripts/
