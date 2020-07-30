@@ -6,7 +6,7 @@ set -o pipefail # Return exit status of the last command in the pipe that failed
 readonly GIT_CRYPT_VERSION=0.5.0-2
 
 source  /etc/os-release
-if [ ${VERSION:3:-1} == 'stretch' ] ; then
+if [ ${VERSION:3:-1} == 'stretch' ] || [ ${VERSION_CODENAME} == 'buster' ] ; then
         apt-get -y install git-crypt || true
 else
   curl -L "https://github.com/AGWA/git-crypt/archive/debian/$GIT_CRYPT_VERSION.tar.gz" | tar zxv -C /var/tmp && \
