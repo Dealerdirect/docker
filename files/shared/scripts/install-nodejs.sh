@@ -3,8 +3,8 @@ set -o errexit  # Exit script when a command exits with non-zero status
 set -o pipefail # Return exit status of the last command in the pipe that failed
 
 if [ -z "$NODE_VERSION" ]; then
-  curl -sL https://deb.nodesource.com/setup_7.x | bash -
-  apt-get -y install nodejs
+  curl -sL https://deb.nodesource.com/setup_12.x | bash -
+  apt-get -y install nodejs 
 else
   groupadd --gid 1000 node
   useradd --uid 1000 --gid node --shell /bin/bash --create-home node
