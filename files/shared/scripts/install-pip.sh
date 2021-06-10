@@ -4,8 +4,8 @@ set -o pipefail # Return exit status of the last command in the pipe that failed
 
 pip=$(which pip3) || pip=$(which pip)
 
-$pip install --upgrade setuptools
+$pip install --prefer-binary --upgrade setuptools
 
 if [ ! -z "$INSTALL_PIP" ]; then
-  $pip install $INSTALL_PIP
+  $pip install --prefer-binary $INSTALL_PIP
 fi
