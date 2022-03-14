@@ -1,4 +1,4 @@
-FROM php:7.4
+FROM php:7.4-buster
 MAINTAINER Dealerdirect <opensource@dealerdirect.nl>
 
 ENV DEBIAN_FRONTEND noninteractive
