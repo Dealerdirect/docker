@@ -6,7 +6,6 @@ env:
   - IMAGE=debian VERSION=stretch VARIANT=
   - IMAGE=debian VERSION=buster VARIANT=
   - IMAGE=php VERSION= VARIANT=
-  - IMAGE=php VERSION=7.3 VARIANT=
   - IMAGE=php VERSION=7.4 VARIANT=
   - IMAGE=ansible VERSION= VARIANT=
   - IMAGE=ansible VERSION=2.9 VARIANT=
